@@ -1,58 +1,59 @@
 <div>
     <!--===== HERO AREA START =======-->
     <style>
-.hero-area-image {
-    padding: 80px 0;
-    position: relative;
-    overflow: hidden; /* biar nggak keluar jalur */
-}
+        .hero-area-image {
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+            /* biar nggak keluar jalur */
+        }
 
-/* Wrapper utama */
-.video-wrapper {
-    position: relative;
-    max-width: 900px;
-    margin: 0 auto;
-}
+        /* Wrapper utama */
+        .video-wrapper {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+        }
 
-/* Frame video */
-.video-frame {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    border-radius: 20px;
-    overflow: hidden;
-    background: #000;
-    box-shadow: 0 20px 50px rgba(0,0,0,.25);
-}
+        /* Frame video */
+        .video-frame {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border-radius: 20px;
+            overflow: hidden;
+            background: #000;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, .25);
+        }
 
-/* iframe */
-.video-frame iframe {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-}
+        /* iframe */
+        .video-frame iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
 
-/* Shape dekorasi */
-.video-wrapper .shape {
-    position: absolute;
-    bottom: -40px;
-    right: -40px;
-    width: 180px;
-    z-index: -1;
-    opacity: .7;
-}
-@media (max-width: 768px) {
-    .video-wrapper {
-        max-width: 100%;
-    }
+        /* Shape dekorasi */
+        .video-wrapper .shape {
+            position: absolute;
+            bottom: -40px;
+            right: -40px;
+            width: 180px;
+            z-index: -1;
+            opacity: .7;
+        }
 
-    .video-wrapper .shape {
-        display: none;
-    }
-}
+        @media (max-width: 768px) {
+            .video-wrapper {
+                max-width: 100%;
+            }
 
+            .video-wrapper .shape {
+                display: none;
+            }
+        }
     </style>
     <div class="hero-area6">
         <div class="container">
@@ -93,26 +94,24 @@
     <!--===== HERO AREA END =======-->
     <!-- ===== HERO AREA IMAGE START ======= -->
     <div class="hero-area-image">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-10 m-auto text-center">
-                <div class="images-area _relative video-wrapper" >
-                     <div class="video-frame ">
-                        <iframe
-                            src="https://www.youtube.com/embed/xwp2YAHifHg"
-                            title="YouTube video"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 m-auto text-center">
+                    <div class="images-area _relative video-wrapper">
+                        <div class="video-frame ">
+                            <iframe src="https://www.youtube.com/embed/xwp2YAHifHg" title="YouTube video"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
 
-                    <img src="/img/shapes/hero1-img-shape.png" alt="" class="shape" />
+                        <img src="/img/shapes/hero1-img-shape.png" alt="" class="shape" />
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
     <!-- ===== HERO AREA IMAGE END ======= -->
 
@@ -129,8 +128,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="main-image right60" data-aos="zoom-out" data-aos-duration="800">
-                        <img src="https://ik.imagekit.io/waters2021/sehataqua/uploads/20240125161145_original.jpg?tr=q-80,f-auto"
-                            alt="">
+                        <img src="{{ asset('assets/img/others/bottle.webp') }}" alt="">
                     </div>
                 </div>
                 <div class="col-1"></div>
@@ -182,19 +180,111 @@
                 </div>
                 <div class="col-lg-1"></div>
                 <div class="col-lg-6">
-                    <div class="apps-images">
+                    <img src="{{ asset('assets/img/others/tes1.webp') }}" class="rounded mt-3" alt="">
+                    {{-- <div class="apps-images">
                         <div class="image1">
                             <img src="assets/img/bg/apps5-shape-bg.png" alt="">
                             <div class="dot"></div>
                         </div>
                         <div class="image2">
-                            <img src="{{asset('assets/img/others/apps5-1.png')}}" alt="">
+                            <img src="{{ asset('assets/img/others/apps5-1.png') }}" alt="">
+
+                        </div>
+                    </div> --}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--===== BRANDS AREA END =======-->
+
+    <!-- ===== FOOTER AREA START ======= -->
+    <div class="footer6 _relative">
+        <div class="container bg">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="subscribe-area">
+                        <img src="{{ asset('assets/img/logo/logo.webp') }}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg col-md-6 col-12">
+                    <div class="single-footer-items">
+                        <h3>Equallfresh</h3>
+
+                        <ul class="menu-list">
+                            <li>PT. Equallfresh</li>
+                            <li>Jl. Doulu, Berastagi</li>
+                            <li>Sumatera Utara, Indonesia</li>
+                            <li>
+                                <a href="tel:+628123456789">+62 812 3456 789</a>
+                            </li>
+                            <li>
+                                <a href="mailto:info@equallfresh.com">info@equallfresh.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg col-md-6 col-12">
+                    <div class="single-footer-items">
+                        <h3>Resources</h3>
+
+                        <ul class="menu-list">
+                            <li>
+                                <a href="#">Product</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="single-footer-items">
+                        <h3>Media</h3>
+
+                        <ul class="social-icons">
+
+                            <li>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space40"></div>
+
+            <div class="copyright-area">
+                <div class="row align-items-center">
+                    <div class="col-md-5">
+                        <div class="logo">
+                            <a href="#"><img src="/img/logo/footer-logo6.png" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="coppyright text-right">
+                            <a href="#">@2026 Equallfresh</a>
+                            <a href="#">Security</a>
+                            <a href="#">Your Privacy</a>
+                            <a href="#">Terms</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--===== BRANDS AREA END =======-->
+    <!-- ===== FOOTER AREA END ======= -->
 
 </div>

@@ -1,11 +1,12 @@
 <?php
 
 use App\Livewire\Home;
+use App\Livewire\About;
+use App\Livewire\Produk;
+use App\Livewire\Contact;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\RoutingController;
 
-Route::get('/', Home::class);
-
-Route::get('{first}/{second}/{third}', [RoutingController::class, 'thirdLevel'])->name('third');
-Route::get('{first}/{second}', [RoutingController::class, 'secondLevel'])->name('second');
-Route::get('{any}', [RoutingController::class, 'firstLevel'])->name('any');
+Route::livewire('/', Home::class);
+Route::livewire('/produk', Produk::class);
+Route::livewire('/about', About::class);
+Route::livewire('/contact', Contact::class);
