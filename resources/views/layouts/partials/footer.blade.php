@@ -1,149 +1,91 @@
-<!--===== FOOTER AREA START =======-->
-<div class="footer2 _relative">
-    <div class="container">
-        <div class="rwo">
-            <div class="footer-icon-box-all">
-                <div class="footer-icon-box">
-                    <div class="icon">
-                        <img src="assets/img/icons/footer-icon1.png" alt="">
-                    </div>
-                    <div class="headding">
-                        <p>Free training & 24-hours</p>
-                    </div>
-                </div>
+  <!-- ===== FOOTER AREA START ======= -->
+  <div class="footer6 _relative">
+      <div class="container bg">
+          <div class="row">
+              <div class="col-lg-5">
+                  <div class="subscribe-area">
+                      <img src="{{ asset('assets/img/logo/logo.webp') }}" alt="">
+                  </div>
+              </div>
+              <div class="col-lg col-md-6 col-12">
+                  <div class="single-footer-items">
+                      <h3>Equallfresh</h3>
 
-                <div class="footer-icon-box">
-                    <div class="icon">
-                        <img src="assets/img/icons/footer-icon2.png" alt="">
-                    </div>
-                    <div class="headding">
-                        <p>Serious about security & privacy</p>
-                    </div>
-                </div>
+                      <ul class="menu-list">
+                          <li>PT. Tirta Anugerah Sibayakindo</li>
+                          <li>Jl. Jamin Ginting Desa Raya no. 15, Berastagi, Kab-Karo, Sumatera Utara 22152</li>
+                          <li>
+                              <a href="tel:+628116240771">0811-6240-771</a>
+                          </li>
+                          <li>
+                              <a href="tel:+06283261015">(0628) 3261015</a>
+                          </li>
+                          <li>
+                              <a href="mailto:info@equallfresh.com">info@equallfresh.com</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
 
-                <div class="footer-icon-box">
-                    <div class="icon">
-                        <img src="assets/img/icons/footer-icon3.png" alt="">
-                    </div>
-                    <div class="headding">
-                        <p>Highest levels of uptime the last 12 months</p>
-                    </div>
-                </div>
+              <div class="col-lg col-md-6 col-12">
+                  <div class="single-footer-items">
+                      <h3>Resources</h3>
 
-            </div>
-        </div>
-
-        <div class="space50"></div>
-        <div class="row">
-
-            <div class="col-lg col-md-6 col-6">
-                <div class="single-footer-items">
-                    <h3>Product</h3>
-
-                    <ul class="menu-list">
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Integration</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Templates</a></li>
-                        <li><a href="#">Changelog</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-lg col-md-6 col-6">
-                <div class="single-footer-items">
-                    <h3>Support</h3>
-
-                    <ul class="menu-list">
-                        <li><a href="#">On-boarding</a></li>
-                        <li><a href="#">Help center</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Experts</a></li>
-                        <li><a href="#">Status</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-lg col-md-6 col-6">
-                <div class="single-footer-items">
-                    <h3>Resources</h3>
-
-                    <ul class="menu-list">
-                        <li><a href="#">Community</a></li>
-                        <li><a href="#">Affiliates</a></li>
-                        <li><a href="#">Partnerships</a></li>
-                        <li><a href="#">Perks & Benefits</a></li>
-                        <li><a href="#">Api docs</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-lg col-md-6 col-6">
-                <div class="single-footer-items">
-                    <h3>Company</h3>
-
-                    <ul class="menu-list">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Our blog</a></li>
-                        <li><a href="#">In the press</a></li>
-                        <li><a href="#">Brand assets</a></li>
-                        <li><a href="#">Work with us</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-lg col-md-6 col-5">
-                <div class="single-footer-items">
-                    <h3>Download</h3>
-
-                    <ul class="menu-list">
-                        <li><a href="#">iPhone & iPad</a></li>
-                        <li><a href="#">Android</a></li>
-                        <li><a href="#">MacOS</a></li>
-                        <li><a href="#">Window</a></li>
-                    </ul>
-                </div>
-            </div>
+                      <ul class="menu-list">
+                          <li>
+                              <a href="#">Product</a>
+                          </li>
+                          <li>
+                              <a href="#">Contact</a>
+                          </li>
+                          <li>
+                              <a href="#">About</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
 
 
-            <div class="col-lg-3 col-md-6 col-7">
-                <div class="single-footer-items">
-                    <h3>Social Links</h3>
 
-                    <ul class="social-icons">
-                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    </ul>
+              <div class="col-lg-3 col-md-6 col-12">
+                  <div class="single-footer-items">
+                      <h3>Media</h3>
 
-                </div>
-            </div>
+                      <ul class="social-icons">
 
-        </div>
+                          <li>
+                              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                          </li>
+                          <li>
+                              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                          </li>
+                          <li>
+                              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
 
-        <div class="space40"></div>
+          <div class="space40"></div>
 
-        <div class="copyright-area">
-            <div class="row align-items-center">
-                <div class="col-md-5">
-                    <div class="logo">
-                        <a href="index.php"><img src="assets/img/logo/header-logo2.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-md-7">
-                    <div class="coppyright text-right">
-                        <a href="#">@2024 eSoft</a>
-                        <a href="#">Security</a>
-                        <a href="#">Your Privacy</a>
-                        <a href="#">Terms</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <img class="footer-shape" src="assets/img/shapes/footer2-shape.png" alt="">
-    <img class="footer-shape2" src="assets/img/shapes/footer2-shape2.png" alt="">
-</div>
-<!--===== FOOTER AREA END =======-->
+          <div class="copyright-area">
+              <div class="row align-items-center">
+                  <div class="col-md-5">
+                      <div class="logo">
+                          <a href="#"><img src="/img/logo/footer-logo6.png" alt="" /></a>
+                      </div>
+                  </div>
+                  <div class="col-md-7">
+                      <div class="coppyright text-right">
+                          <a href="#">@2026 Equallfresh</a>
+                          <a href="#">Security</a>
+                          <a href="#">Your Privacy</a>
+                          <a href="#">Terms</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- ===== FOOTER AREA END ======= -->

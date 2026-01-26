@@ -9759,7 +9759,8 @@ li.has-dropdown1 span {
 }
 
 .header-area.header-area6 .header-elements .main-menu-ex ul li a {
-    color: #ffffff;
+    color: #000000;
+    font-weight: semibold;
     margin: 0px 5px;
 }
 

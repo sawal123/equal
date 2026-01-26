@@ -1,6 +1,6 @@
 <!--=====Desktop HEADER START=======-->
 <header>
-    <div class="header-area header-area8 header-area-all d-none d-lg-block" id="header">
+    <div class="header-area header-area6 header-area-all d-none d-lg-block" id="header">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -12,8 +12,8 @@
                         </div>
 
                         <div class="header-right-area">
-                            <div class="main-menu-ex main-menu-ex1">
-                                <ul>
+                            <div class="main-menu-ex main-menu-ex1" >
+                                <ul >
                                     <li><a href="/" wire:navigate>Home</a></li>
                                     <li><a href="/produk" wire:navigate>Produk</a></li>
                                     <li><a href="/about" wire:navigate>About</a></li>

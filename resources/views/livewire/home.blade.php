@@ -138,9 +138,9 @@
                             Mineral Berkualitas</span> --}}
                         <h3 class="text-anime-style-3">Kesegaran Alami untuk Setiap Kebutuhan</h3>
                         <div class="space16"></div>
-                        <p data-aos="fade-left" data-aos-duration="900">Berasal dari sumber alami yang terjaga, setiap
-                            tetes air mineral kami melalui proses higienis untuk menghadirkan kesegaran murni.
-                            Karena tubuhmu layak mendapatkan yang terbaik.</p>
+                        <p data-aos="fade-left" data-aos-duration="900">Air Mineral dari sumber mata air pegunung Daulu,
+                            Berastagi. Dengan kandungan pH alami 7.1, bebas logam berat, dan menyegarkan tubuh. Tersedia
+                            dalam ukuran gelas cup (220 ml), botol (330 ml, 600 ml, 1500 ml), dan galon (19 liter)</p>
                         <div class="space30"></div>
                         <div class="" data-aos="fade-left" data-aos-duration="900">
                             <a href="features.php" class="theme-btn9"><span class="tb8">Dapatkan Sekarang <span
@@ -164,7 +164,6 @@
             <div class="row align-items-center">
                 <div class="col-lg-5">
                     <div class="heading6-w">
-                        <span class="span2" data-aos="fade-left" data-aos-duration="700">KOMITMEN KUALITAS</span>
                         <h2 class="text-anime-style-3">Dipercaya untuk Menemani Setiap Aktivitas</h2>
                         <div class="space16"></div>
                         <p data-aos="fade-left" data-aos-duration="900">Kami menghadirkan air minum mineral berkualitas
@@ -197,94 +196,6 @@
     </div>
     <!--===== BRANDS AREA END =======-->
 
-    <!-- ===== FOOTER AREA START ======= -->
-    <div class="footer6 _relative">
-        <div class="container bg">
-            <div class="row">
-                <div class="col-lg-5">
-                    <div class="subscribe-area">
-                        <img src="{{ asset('assets/img/logo/logo.webp') }}" alt="">
-                    </div>
-                </div>
-                <div class="col-lg col-md-6 col-12">
-                    <div class="single-footer-items">
-                        <h3>Equallfresh</h3>
 
-                        <ul class="menu-list">
-                            <li>PT. Equallfresh</li>
-                            <li>Jl. Doulu, Berastagi</li>
-                            <li>Sumatera Utara, Indonesia</li>
-                            <li>
-                                <a href="tel:+628123456789">+62 812 3456 789</a>
-                            </li>
-                            <li>
-                                <a href="mailto:info@equallfresh.com">info@equallfresh.com</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg col-md-6 col-12">
-                    <div class="single-footer-items">
-                        <h3>Resources</h3>
-
-                        <ul class="menu-list">
-                            <li>
-                                <a href="#">Product</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact</a>
-                            </li>
-                            <li>
-                                <a href="#">About</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-
-
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="single-footer-items">
-                        <h3>Media</h3>
-
-                        <ul class="social-icons">
-
-                            <li>
-                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="space40"></div>
-
-            <div class="copyright-area">
-                <div class="row align-items-center">
-                    <div class="col-md-5">
-                        <div class="logo">
-                            <a href="#"><img src="/img/logo/footer-logo6.png" alt="" /></a>
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="coppyright text-right">
-                            <a href="#">@2026 Equallfresh</a>
-                            <a href="#">Security</a>
-                            <a href="#">Your Privacy</a>
-                            <a href="#">Terms</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ===== FOOTER AREA END ======= -->
 
 </div>

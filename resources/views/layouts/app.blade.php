@@ -23,8 +23,9 @@
 
     @include('layouts.partials.header.navbar')
 
-        {{ $slot }}
+    {{ $slot }}
 
+    @include('layouts.partials.footer')
     @include('layouts.partials.footer-scripts')
     @livewireScripts
 </body>
