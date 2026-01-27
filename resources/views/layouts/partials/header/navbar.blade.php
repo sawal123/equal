@@ -12,10 +12,10 @@
                         </div>
 
                         <div class="header-right-area">
-                            <div class="main-menu-ex main-menu-ex1" >
-                                <ul >
+                            <div class="main-menu-ex main-menu-ex1">
+                                <ul>
                                     <li><a href="/" wire:navigate>Home</a></li>
-                                    <li><a href="/produk" wire:navigate>Produk</a></li>
+                                    <li><a href="/produk" wire:navigate>Product</a></li>
                                     <li><a href="/about" wire:navigate>About</a></li>
                                     <li><a href="/contact" wire:navigate>Contact</a></li>
                                 </ul>
@@ -43,7 +43,7 @@
             <div class="mobile-header-elements">
                 <div class="mobile-logo">
                     <a href="/">
-                        <img src="{{ asset('assets/img/logo/logo.webp') }}" alt="">
+                        <img src="{{ asset('assets/img/logo/logo2.webp') }}" alt="">
                     </a>
                 </div>
                 <div class="mobile-nav-icon">
@@ -57,7 +57,7 @@
 <div class="mobile-sidebar mobile-sidebar4 d-block d-lg-none">
     <div class="logo-m">
         <a href="/">
-            <img src="{{ asset('assets/img/logo/logo.webp') }}" alt="">
+            <img src="{{ asset('assets/img/logo/logo1.webp') }}" alt="">
         </a>
     </div>
 
@@ -71,7 +71,7 @@
                 <a href="/" wire:navigate>Home</a>
             </li>
             <li>
-                <a href="/produk" wire:navigate>Produk</a>
+                <a href="/produk" wire:navigate>Product</a>
             </li>
             <li>
                 <a href="/about" wire:navigate>About</a>

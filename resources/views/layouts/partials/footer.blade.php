@@ -4,7 +4,7 @@
           <div class="row">
               <div class="col-lg-5">
                   <div class="subscribe-area">
-                      <img src="{{ asset('assets/img/logo/logo.webp') }}" alt="">
+                      <img src="{{ asset('assets/img/logo/logo1.webp') }}" alt="">
                   </div>
               </div>
               <div class="col-lg col-md-6 col-12">

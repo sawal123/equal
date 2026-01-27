@@ -63,19 +63,16 @@
 
                     <div class="carousel-inner rounded ">
                         <div class="carousel-item rounded  active">
-                            <img src="https://danone.co.id/wp-content/uploads/2024/09/waters-banner.jpg"
-                                class="d-block w-100" alt="...">
+                            <img src="{{ asset('assets/img/slide/1.jpg') }}" class="d-block w-100" alt="...">
                         </div>
 
                         <div class="carousel-item rounded ">
-                            <img src="https://ik.imagekit.io/waters2021/aqua-botol/aqua-botol-banner-lg_-zSWLBqHe.jpg?tr=w-1920,q-75,f-auto"
-                                class="d-block w-100" alt="...">
+                            <img src="{{ asset('assets/img/slide/2.jpg') }}" class="d-block w-100" alt="...">
                         </div>
 
-                        <div class="carousel-item rounded ">
-                            <img src="https://danone.co.id/wp-content/uploads/2024/09/waters-banner.jpg"
-                                class="d-block w-100" alt="...">
-                        </div>
+                        {{-- <div class="carousel-item rounded ">
+                            <img src="{{ asset('assets/img/slides/3.jpg') }}" class="d-block w-100" alt="...">
+                        </div> --}}
                     </div>
 
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
@@ -128,7 +125,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="main-image right60" data-aos="zoom-out" data-aos-duration="800">
-                        <img src="{{ asset('assets/img/others/bottle.webp') }}" alt="">
+                        <img src="{{ asset('assets/img/produk/produk.jpg') }}" alt="">
                     </div>
                 </div>
                 <div class="col-1"></div>
@@ -143,7 +140,7 @@
                             dalam ukuran gelas cup (220 ml), botol (330 ml, 600 ml, 1500 ml), dan galon (19 liter)</p>
                         <div class="space30"></div>
                         <div class="" data-aos="fade-left" data-aos-duration="900">
-                            <a href="features.php" class="theme-btn9"><span class="tb8">Dapatkan Sekarang <span
+                            <a href="/produk" class="theme-btn9" wire:navigate><span class="tb8">Lihat Produk <span
                                         class="arrow"><i class="fa-solid fa-arrow-right"></i></span></span></a>
                         </div>
                     </div>

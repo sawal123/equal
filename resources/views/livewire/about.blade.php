@@ -5,7 +5,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="about-img">
-                        <img src="{{ asset('assets/img/others/tes1.webp') }}" alt="" class="rounded" />
+                        <img src="{{ asset('assets/img/about/3.jpg') }}" alt="" class="rounded" />
                     </div>
                 </div>
                 <div class="col-lg-6">
