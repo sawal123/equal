@@ -3,7 +3,7 @@
 
 <head>
     @php
-    $title = 'Web Page Builder';
+    $title = 'Equallfresh';
     $logo5 = true;
     @endphp
 
