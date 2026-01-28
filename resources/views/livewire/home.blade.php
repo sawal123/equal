@@ -169,7 +169,7 @@
                             dan kandungan mineral alaminya.</p>
                         <div class="space30"></div>
                         <div class="" data-aos="fade-left" data-aos-duration="1000">
-                            <a href="account.php" class="theme-btn8"><span class="tb8">Get Started, It’s Free <span
+                            <a href="/about" class="theme-btn8" wire:navigate><span class="tb8">Tentang Equallfresh <span
                                         class="arrow"><i class="fa-solid fa-arrow-right"></i></span></span></a>
                         </div>
                     </div>

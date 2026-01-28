@@ -1,6 +1,6 @@
 <div>
     <!-- ===== ABOUT PAGE AREA START ======= -->
-    <div class="about-page-area1 sp">
+    <div class="about-page-area1 sp mt-5">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
