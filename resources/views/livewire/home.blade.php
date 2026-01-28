@@ -176,7 +176,7 @@
                 </div>
                 <div class="col-lg-1"></div>
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/img/others/tes1.webp') }}" class="rounded mt-3" alt="">
+                    <img src="{{ asset('assets/img/about/eq.jpg') }}" class="rounded mt-3" alt="">
                     {{-- <div class="apps-images">
                         <div class="image1">
                             <img src="assets/img/bg/apps5-shape-bg.png" alt="">
