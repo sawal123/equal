@@ -13,7 +13,6 @@
     ])
 
     @include('layouts.partials.head-css')
-    @vite([])
     @livewireStyles
 </head>
 
