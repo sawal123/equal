@@ -8,6 +8,6 @@ class Produk extends Component
 {
     public function render()
     {
-        return view('livewire.produk');
+        return view('livewire.produk')->layout('layouts.app');
     }
 }

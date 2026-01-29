@@ -7,8 +7,8 @@ use App\Livewire\Contact;
 use App\Livewire\DetailProduk;
 use Illuminate\Support\Facades\Route;
 
-Route::livewire('/', Home::class);
-Route::livewire('/produk', Produk::class);
-Route::livewire('/about', About::class);
-Route::livewire('/produk/{id}', DetailProduk::class);
-Route::livewire('/contact', Contact::class);
+Route::get('/', Home::class);
+Route::get('/produk', Produk::class);
+Route::get('/about', About::class);
+Route::get('/produk/{id}', DetailProduk::class);
+Route::get('/contact', Contact::class);

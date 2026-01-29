@@ -41,6 +41,6 @@ class DetailProduk extends Component
     }
     public function render()
     {
-        return view('livewire.detail-produk');
+        return view('livewire.detail-produk')->layout('layouts.app');
     }
 }
