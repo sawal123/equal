@@ -3,13 +3,13 @@
 
 <head>
     @php
-    $title = 'Equallfresh';
-    $logo5 = true;
+        $title = 'Equallfresh';
+        $logo5 = true;
     @endphp
 
     @include('layouts.partials.title-meta', [
-    'title' => $title,
-    'logo5' => $logo5
+        'title' => $title,
+        'logo5' => $logo5,
     ])
 
     @include('layouts.partials.head-css')
