@@ -13,7 +13,7 @@
 
                         $title = [
                             "Equallfresh 220ml",
-                            "Equallfresh 500ml",
+                            "Equallfresh 600ml",
                             "Equallfresh 19L",
                         ];  
                     @endphp
