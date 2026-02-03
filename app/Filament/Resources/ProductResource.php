@@ -2,16 +2,17 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\ProductResource\Pages;
-use App\Filament\Resources\ProductResource\RelationManagers;
-use App\Models\Product;
 use Filament\Forms;
-use Filament\Forms\Form;
-use Filament\Resources\Resource;
 use Filament\Tables;
+use App\Models\Product;
+use Filament\Forms\Form;
 use Filament\Tables\Table;
+use Illuminate\Support\Str;
+use Filament\Resources\Resource;
 use Illuminate\Database\Eloquent\Builder;
+use App\Filament\Resources\ProductResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use App\Filament\Resources\ProductResource\RelationManagers;
 
 class ProductResource extends Resource
 {
@@ -24,26 +25,49 @@ class ProductResource extends Resource
         return $form
             ->schema([
                 Forms\Components\FileUpload::make('gambar')
-                    ->label('Gambar Produk')
                     ->image()
+                    ->disk('public')
                     ->directory('products')
-                    ->imageEditor()
+                    ->label('Gambar Produk')
                     ->nullable(),
 
                 Forms\Components\TextInput::make('title')
                     ->label('Nama Produk')
                     ->required()
-                    ->maxLength(255),
+                    ->live(onBlur: true)
+                    ->afterStateUpdated(function ($state, callable $set) {
+                        $set('slug', Str::slug($state));
+                    }),
 
-                Forms\Components\Textarea::make('deskripsi')
-                    ->rows(4)
+                Forms\Components\TextInput::make('slug')
+                    ->required()
+                    ->unique(ignoreRecord: true)
+                    ->helperText('Otomatis dari nama produk'),
+
+                Forms\Components\RichEditor::make('deskripsi')
+                    ->label('Deskripsi Produk')
+                    ->toolbarButtons([
+                        'bold',
+                        'italic',
+                        'underline',
+                        'strike',
+                        'bulletList',
+                        'orderedList',
+                        'link',
+                        'undo',
+                        'redo',
+                    ])
                     ->columnSpanFull(),
+
 
                 Forms\Components\TextInput::make('harga')
                     ->numeric()
                     ->prefix('Rp')
-                    ->nullable()
-                    ->helperText('Boleh dikosongkan jika harga belum ditentukan'),
+                    ->nullable(),
+
+                Forms\Components\Toggle::make('is_active')
+                    ->label('Aktif')
+                    ->default(true),
             ]);
     }
 
@@ -63,11 +87,14 @@ class ProductResource extends Resource
                 Tables\Columns\TextColumn::make('harga')
                     ->money('IDR')
                     ->sortable()
-                    ->placeholder('—'),
+                    ->placeholder('-'),
+
+                Tables\Columns\IconColumn::make('is_active')
+                    ->label('Aktif')
+                    ->boolean(),
 
                 Tables\Columns\TextColumn::make('created_at')
-                    ->dateTime('d M Y')
-                    ->label('Dibuat'),
+                    ->date('d M Y'),
             ])
             ->filters([
                 //

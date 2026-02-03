@@ -24,8 +24,9 @@
                         {{-- .test --}}
 
                         <div class="header4-buttons">
-                            <a href="https:/wa.me/6281245456565" class="theme-btn8"><span class="tb8">Informasi <span
-                                        class="arrow"><i class="fa-solid fa-arrow-right"></i></span></span></a>
+                            <a href="https://wa.me/628116240771" target="_blank" class="theme-btn8"><span
+                                    class="tb8">Informasi <span class="arrow"><i
+                                            class="fa-solid fa-arrow-right"></i></span></span></a>
                         </div>
 
                     </div>
@@ -81,7 +82,7 @@
             </li>
         </ul>
 
-        <a class="sidebar1-btn" href="https:/wa.me/6281245456565">
+        <a class="sidebar1-btn" href="https://wa.me/628116240771" target="_blank">
             <span>Informasi</span>
             <span class="arrow">
                 <i class="fa-regular fa-arrow-right"></i>

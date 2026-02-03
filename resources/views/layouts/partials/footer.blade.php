@@ -9,23 +9,27 @@
               </div>
               <div class="col-lg col-md-6 col-12">
                   <div class="single-footer-items">
-                      <h3>Equallfresh</h3>
+                      <h3 class="mb-3">Equallfresh</h3>
 
-                      <ul class="menu-list">
-                          <li>PT. Tirta Anugerah Sibayakindo</li>
-                          <li>Jl. Jamin Ginting Desa Raya no. 15, Berastagi, Kab-Karo, Sumatera Utara 22152</li>
-                          <li>
-                              <a href="tel:+628116240771">0811-6240-771</a>
+                      <ul class="menu-list list-unstyled">
+                          <li class="mb-2">PT. Tirta Anugerah Sibayakindo</li>
+
+                          <li class="mb-2">
+                              Jl. Jamin Ginting No.15, Raya, Kec. Berastagi, Kab. Karo,
+                              Sumatera Utara 22152, Indonesia
                           </li>
-                          <li>
-                              <a href="tel:+06283261015">(0628) 3261015</a>
+
+                          <li class="mb-2">
+                              <a href="https://wa.me/628116240771" target="_blank">0811-6240-771</a>
                           </li>
+
                           <li>
-                              <a href="mailto:info@equallfresh.com">info@equallfresh.com</a>
+                              <a href="mailto:equallfresh26@gmail.com">equallfresh26@gmail.com</a>
                           </li>
                       </ul>
                   </div>
               </div>
+
 
               <div class="col-lg col-md-6 col-12">
                   <div class="single-footer-items">

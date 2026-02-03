@@ -20,10 +20,10 @@ class DetailProduk extends Component
                 'kegunaan' => 'Rapat, event, sekolah, konsumsi pribadi',
             ],
             [
-                'title' => 'Equallfresh 500ml',
+                'title' => 'Equallfresh 600ml',
                 'gambar' => '2.jpg',
-                'deskripsi' => 'Equallfresh 500ml dirancang untuk menemani aktivitas Anda sepanjang hari. Ukurannya pas, mudah dibawa, dan menjaga tubuh tetap terhidrasi.',
-                'volume' => '500 ml',
+                'deskripsi' => 'Equallfresh 600ml dirancang untuk menemani aktivitas Anda sepanjang hari. Ukurannya pas, mudah dibawa, dan menjaga tubuh tetap terhidrasi.',
+                'volume' => '600 ml',
                 'kegunaan' => 'Olahraga, kerja, perjalanan jauh',
             ],
             [

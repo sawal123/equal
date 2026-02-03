@@ -11,14 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('products', function (Blueprint $table) {
+        Schema::create('social_media', function (Blueprint $table) {
             $table->id();
-            $table->string('gambar')->nullable();
-            $table->string('title');
-            $table->text('deskripsi')->nullable();
-            $table->decimal('harga', 15, 2)->nullable();
-            $table->string('slug')->unique();
-            $table->boolean('is_active')->default(true);
+            $table->string('nama');
+            $table->string('link');
+            $table->string('type'); // instagram, facebook, twitter, dll
+            $table->string('icon')->nullable(); // class icon / file icon
             $table->timestamps();
         });
     }
@@ -28,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('products');
+        Schema::dropIfExists('social_media');
     }
 };

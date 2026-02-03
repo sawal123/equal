@@ -19,9 +19,9 @@
         }
     </style>
     <div class="contact-page-area sp ">
-        <div class="container border pt-5 rounded">
+        <div class=" border pt-5 rounded">
             <div class="row">
-                <div class="col-lg-8 m-auto text-center">
+                <div class="col-12 m-auto text-center">
                     <div class="common-main-headding">
                         <h1>Contact Us</h1>
                         {{-- <p>At eSoft, we value your inquiries and are here to provide the support you need. Whether
@@ -57,22 +57,12 @@
                                 </div>
                                 <div class="headding">
                                     <h5>WhatsApp</h5>
-                                    <a href="https://wa.me/6281234567890" target="_blank">
-                                        +62 812-3456-7890
+                                    <a href="https://wa.me/628116240771" target="_blank">
+                                        +62 811 6240 771
                                     </a>
                                 </div>
                             </div>
-                            <div class="single-box">
-                                <div class="icon">
-                                    <i class="fa-solid fa-phone"></i>
-                                </div>
-                                <div class="headding">
-                                    <h5>Telephone</h5>
-                                    <a href="tel:+06283261015" target="_blank">
-                                        (0628) 3261015
-                                    </a>
-                                </div>
-                            </div>
+
 
                             <!-- Email -->
                             <div class="single-box">
@@ -81,8 +71,8 @@
                                 </div>
                                 <div class="headding">
                                     <h5>Email</h5>
-                                    <a href="mailto:info@email.com">
-                                        info@email.com
+                                    <a href="mailto:equallfresh26@gmail.com">
+                                        equallfresh26@gmail.com
                                     </a>
                                 </div>
                             </div>

@@ -28,21 +28,17 @@
                         <hr>
                         <h5>Visi</h5>
                         <p>
-                            Menjadi Produsen Air Minum Dalam Kemasan (AMDK) yang mengutamakan Produk Hygienis dan
+                            Menjadi Produsen Air Minum Dalam Kemasan (AMDK) yang mengutamakan produk higienis dan
                             memenuhi standar yang ditetapkan.
                         </p>
                         <hr>
 
                         <h5>Misi</h5>
 
-                        <ul class="list">
-                            <li>
-                                <span><i class="fa-solid fa-check"></i></span>
-                                Berupaya memenuhi kepuasan pelanggan dengan menghasilkan produk yang berkualitas dan
-                                bermutu tinggi
-                            </li>
 
-                        </ul>
+                        <p> Berupaya memenuhi kepuasan pelanggan dengan menghasilkan produk yang berkualitas dan
+                            bermutu tinggi</p>
+
                         {{-- <div class="space30"></div>
                         <a href="#" class="theme-btn2">Get Started Now</a> --}}
                     </div>
