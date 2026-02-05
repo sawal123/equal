@@ -54,28 +54,26 @@
                 display: none;
             }
         }
+
     </style>
     <div class="hero-area6">
         <div class="container">
             <div class="row align-items-center">
-                <div id="carouselExample" class="carousel slide carousel-custom" data-bs-ride="carousel"
-                    data-bs-interval="3000">
+                <div id="carouselExample" class="carousel slide carousel-custom" data-bs-ride="carousel" data-bs-interval="3000">
 
                     <div class="carousel-inner rounded ">
                         @foreach ($slide as $key => $item)
-                            <div class="carousel-item rounded {{ $key == 0 ? 'active' : '' }}">
-                                <img src="{{ asset('storage/' . $item->gambar) }}" class="d-block w-100" alt="...">
-                            </div>
+                        <div class="carousel-item rounded {{ $key == 0 ? 'active' : '' }}">
+                            <img src="{{ asset('storage/' . $item->gambar) }}" class="d-block w-100" alt="...">
+                        </div>
                         @endforeach
                     </div>
 
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                        data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon"></span>
                     </button>
 
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                        data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </button>
                 </div>
@@ -90,10 +88,7 @@
                 <div class="col-lg-10 m-auto text-center">
                     <div class="images-area _relative video-wrapper">
                         <div class="video-frame ">
-                            <iframe src="https://www.youtube.com/embed/1QbqG17lbHc?si=any0XJhQe1rL17n1"
-                                title="YouTube video" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
+                            <iframe src="{{$youtube->youtube_embed}}" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                             </iframe>
                         </div>
 
@@ -109,9 +104,9 @@
     <!--===== FEATURES AREA START =======-->
     {{-- <div class="features-area6 sp"> --}}
     @foreach ($sections as $section)
-        @if ($section->type == 'product' && $section->is_active)
-            @include('livewire.home.product', ['section' => $section])
-        @endif
+    @if ($section->type == 'product' && $section->is_active)
+    @include('livewire.home.product', ['section' => $section])
+    @endif
     @endforeach
     {{-- </div> --}}
     <!--===== FEATURES AREA END =======-->
@@ -120,9 +115,9 @@
 
     <!--===== BRANDS AREA START =======-->
     @foreach ($sections as $section)
-        @if ($section->type === 'about')
-            @include('livewire.home.about', ['section' => $section])
-        @endif
+    @if ($section->type === 'about')
+    @include('livewire.home.about', ['section' => $section])
+    @endif
     @endforeach
 
     <!--===== BRANDS AREA END =======-->
