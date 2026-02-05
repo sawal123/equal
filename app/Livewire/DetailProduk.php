@@ -9,35 +9,10 @@ class DetailProduk extends Component
     public $produk;
 
 
-    public function mount($id)
+    public function mount($slug)
     {
-        $produkList = [
-            [
-                'title' => 'Equallfresh 220ml',
-                'gambar' => '1.jpg',
-                'deskripsi' => 'Equallfresh 220ml adalah air minum dalam kemasan yang praktis dan higienis. Cocok untuk aktivitas harian, rapat, perjalanan, maupun acara formal.',
-                'volume' => '220 ml',
-                'kegunaan' => 'Rapat, event, sekolah, konsumsi pribadi',
-            ],
-            [
-                'title' => 'Equallfresh 600ml',
-                'gambar' => '2.jpg',
-                'deskripsi' => 'Equallfresh 600ml dirancang untuk menemani aktivitas Anda sepanjang hari. Ukurannya pas, mudah dibawa, dan menjaga tubuh tetap terhidrasi.',
-                'volume' => '600 ml',
-                'kegunaan' => 'Olahraga, kerja, perjalanan jauh',
-            ],
-            [
-                'title' => 'Equallfresh 19L',
-                'gambar' => '3.jpg',
-                'deskripsi' => 'Equallfresh 19L merupakan solusi air minum keluarga dan kantor. Lebih hemat, bersih, dan aman untuk dikonsumsi setiap hari.',
-                'volume' => '19 Liter',
-                'kegunaan' => 'Rumah tangga, kantor, usaha',
-            ],
-        ];
-
-        abort_if(!isset($produkList[$id]), 404);
-
-        $this->produk = $produkList[$id];
+       $this->produk = \App\Models\Product::where('slug', $slug)->first();
+    //    dd($this->produk);
     }
     public function render()
     {

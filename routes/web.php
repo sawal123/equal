@@ -10,5 +10,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', Home::class);
 Route::get('/produk', Produk::class);
 Route::get('/about', About::class);
-Route::get('/produk/{id}', DetailProduk::class);
+Route::get('/produk/{slug}', DetailProduk::class);
 Route::get('/contact', Contact::class);

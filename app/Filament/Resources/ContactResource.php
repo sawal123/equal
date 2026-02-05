@@ -47,11 +47,36 @@ class ContactResource extends Resource
                 Forms\Components\TextInput::make('email')
                     ->email(),
 
+
                 Forms\Components\Textarea::make('google_maps')
-                    ->label('Link Google Maps (Embed / Share)')
+                    ->label('Link Google Maps')
                     ->rows(3)
                     ->columnSpanFull()
-                    ->helperText('Contoh: https://maps.google.com/?q=...'),
+                    ->helperText('Paste link Google Maps, otomatis disimpan sebagai embed')
+
+                    // 🔥 HANYA DI SINI CONVERT-NYA
+                    ->mutateDehydratedStateUsing(function ($state) {
+
+                        // jika sudah embed, langsung simpan
+                        if (str_contains($state, 'output=embed')) {
+                            return $state;
+                        }
+
+                        // ambil koordinat dari link Google Maps
+                        preg_match('/!3d(-?\d+\.\d+)!4d(-?\d+\.\d+)/', $state, $matches);
+
+                        if ($matches) {
+                            $lat = $matches[1];
+                            $lng = $matches[2];
+
+                            return "https://www.google.com/maps?q=$lat,$lng&output=embed";
+                        }
+
+                        // fallback: simpan apa adanya
+                        return $state;
+                    })
+
+
             ]);
     }
 
