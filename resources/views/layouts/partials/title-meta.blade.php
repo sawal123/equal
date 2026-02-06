@@ -10,3 +10,4 @@
 <meta property="og:image" content="{{ asset('storage/'.$seo->og_image) }}">
 <!--=====FAB ICON=======-->
 <link rel="shortcut icon" href="{{ asset('storage/'. $logo->logo_icon) }}" type="image/x-icon">
+<link rel="icon" href="{{ asset('favicon.ico') }}">
