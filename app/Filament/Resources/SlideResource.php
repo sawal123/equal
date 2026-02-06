@@ -17,7 +17,11 @@ class SlideResource extends Resource
 {
     protected static ?string $model = Slide::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationGroup = 'Page Home Settings';
+    protected static ?string $navigationIcon  = 'heroicon-o-presentation-chart-bar';
+
+
+    protected static ?string $navigationLabel = 'Slides';
 
     public static function form(Form $form): Form
     {
@@ -33,8 +37,9 @@ class SlideResource extends Resource
                     ->required(),
 
                 Forms\Components\TextInput::make('link')
-                    ->url()
-                    ->nullable(),
+                    ->nullable()
+                    ->maxLength(255),
+
 
                 Forms\Components\TextInput::make('urutan')
                     ->numeric()

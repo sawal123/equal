@@ -17,7 +17,8 @@ class AboutCompanyResource extends Resource
 {
     protected static ?string $model = AboutCompany::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationGroup = 'Company Profile';
+    protected static ?string $navigationIcon  = 'heroicon-o-building-office-2';
     public static function canCreate(): bool
     {
         return \App\Models\AboutCompany::count() === 0;

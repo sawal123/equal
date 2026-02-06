@@ -11,4 +11,11 @@ class Dashboard extends Page
     protected static ?string $title = 'Dashboard Admin';
 
     protected static string $view = 'filament.pages.dashboard';
+
+    // protected function getHeaderWidgets(): array
+    // {
+    //     return [
+    //         \App\Filament\Widgets\VisitChart::class,
+    //     ];
+    // }
 }

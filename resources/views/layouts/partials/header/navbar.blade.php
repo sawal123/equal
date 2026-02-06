@@ -6,8 +6,7 @@
                 <div class="col-12">
                     <div class="header-elements">
                         <div class="site-logo home1-site-logo ">
-                            <a href="/"><img src="{{ asset('assets/img/logo/logo3.webp') }}"
-                                    style="width: 200px !important" alt="">
+                            <a href="/"><img src="{{ asset('storage/'. $logo->logo_2) }}" style="width: 200px !important" alt="">
                             </a>
                         </div>
 
@@ -22,11 +21,19 @@
                             </div>
                         </div>
                         {{-- .test --}}
+                        @php
+                        $wa = $contact->whatsapp;
 
+                        // hapus spasi & strip
+                        $wa = preg_replace('/[^0-9]/', '', $wa);
+
+                        // jika diawali 08, ganti jadi 628
+                        if (str_starts_with($wa, '08')) {
+                        $wa = '628' . substr($wa, 2);
+                        }
+                        @endphp
                         <div class="header4-buttons">
-                            <a href="https://wa.me/628116240771" target="_blank" class="theme-btn8"><span
-                                    class="tb8">Informasi <span class="arrow"><i
-                                            class="fa-solid fa-arrow-right"></i></span></span></a>
+                            <a href="https://wa.me/{{$wa}}" target="_blank" class="theme-btn8"><span class="tb8">Informasi <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span></span></a>
                         </div>
 
                     </div>
@@ -44,7 +51,7 @@
             <div class="mobile-header-elements">
                 <div class="mobile-logo">
                     <a href="/">
-                        <img src="{{ asset('assets/img/logo/logo2.webp') }}" alt="">
+                        <img src="{{ asset('storage/'. $logo->logo_2) }}" alt="">
                     </a>
                 </div>
                 <div class="mobile-nav-icon">
@@ -58,7 +65,7 @@
 <div class="mobile-sidebar mobile-sidebar4 d-block d-lg-none">
     <div class="logo-m">
         <a href="/">
-            <img src="{{ asset('assets/img/logo/logo1.webp') }}" alt="">
+            <img src="{{ asset('storage/'. $logo->logo_1) }}" alt="">
         </a>
     </div>
 

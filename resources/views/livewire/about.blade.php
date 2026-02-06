@@ -13,34 +13,18 @@
                         <h2>Tentang Perusahaan</h2>
                         <div class="space16"></div>
                         <p>
-                            PT. Tirta Anugerah Sibayakindo adalah perusahaan yang bergerak di bidang industri Air
-                            Mineral Dalam Kemasan (AMDK). Berdiri tanggal 24 Januari 2026 dan berlokasi di Kabupaten
-                            Karo, Sumatera Utara. Produk utama yang diproduksi yaitu air mineral EquallFresh yang
-                            bersumber dari mata air alami Daulu, Berastagi. Air Mineral EquallFresh diolah secara
-                            higienis untuk memberikan kesegaran yang jernih, aman, dan alami. Air mineral EquallFresh
-                            mengandung pH alami 7.1 dan bebas logam berat sehingga dapat menyegarkan dan menyehatkan
-                            tubuh.
-                            <br>
-                            PT. Tirta Anugerah Sibayakindo berkomitmen memenuhi kepercayaan dan kepuasan pelanggan
-                            dengan produk berkualitas dan bermutu tinggi. PT. Tirta Anugerah Sibayakindo berupaya terus
-                            berkembang dan memberikan kontribusi positif bagi masyarakat sekitar.
+                            {!! $about->about !!}
                         </p>
                         <hr>
                         <h5>Visi</h5>
                         <p>
-                            Menjadi Produsen Air Minum Dalam Kemasan (AMDK) yang mengutamakan produk higienis dan
-                            memenuhi standar yang ditetapkan.
+                            {{ $about->visi }}
                         </p>
                         <hr>
-
                         <h5>Misi</h5>
-
-
-                        <p> Berupaya memenuhi kepuasan pelanggan dengan menghasilkan produk yang berkualitas dan
-                            bermutu tinggi</p>
-
-                        {{-- <div class="space30"></div>
-                        <a href="#" class="theme-btn2">Get Started Now</a> --}}
+                        <p>
+                            {{$about->misi}}
+                        </p>
                     </div>
                 </div>
             </div>

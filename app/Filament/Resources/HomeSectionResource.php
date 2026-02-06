@@ -19,6 +19,11 @@ class HomeSectionResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
+    protected static ?string $navigationGroup = 'Page Home Settings';
+
+    protected static ?string $navigationLabel = 'Home Section';
+
+
     public static function form(Form $form): Form
     {
         return $form

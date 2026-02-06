@@ -16,8 +16,9 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class LogoResource extends Resource
 {
     protected static ?string $model = Logo::class;
+    protected static ?string $navigationGroup = 'Company Profile';
+    protected static ?string $navigationIcon  = 'heroicon-o-photo';
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
     public static function canCreate(): bool
     {
         return \App\Models\Logo::count() === 0;

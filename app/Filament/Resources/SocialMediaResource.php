@@ -17,7 +17,9 @@ class SocialMediaResource extends Resource
 {
     protected static ?string $model = SocialMedia::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationGroup = 'Marketing';
+    protected static ?string $navigationIcon  = 'heroicon-o-share';
+
 
     public static function form(Form $form): Form
     {
@@ -61,8 +63,8 @@ class SocialMediaResource extends Resource
                     ->required(),
                 Forms\Components\TextInput::make('link')
                     ->label('Link URL')
-                    ->url()
-                    ->required()
+                    ->nullable()
+                    ->maxLength(255)
                     ->helperText('Contoh: https://instagram.com/username'),
 
                 Forms\Components\TextInput::make('icon')
