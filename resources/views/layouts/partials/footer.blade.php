@@ -68,7 +68,7 @@
 
                           @foreach ($socials as $item)
                               <li>
-                                  <a href="{{ $item->icon }}"><i class="{{ $item->icon }}"></i></a>
+                                  <a href="{{ $item->link }}"><i class="{{ $item->icon }}"></i></a>
                               </li>
                           @endforeach
 
