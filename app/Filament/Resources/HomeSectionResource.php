@@ -30,39 +30,39 @@ class HomeSectionResource extends Resource
             ->schema([
                 Forms\Components\Select::make('type')
                     ->options([
-                        'hero' => 'Hero / Video',
+                        // 'hero' => 'Hero / Video',
                         'product' => 'Produk',
-                        'about' => 'Tentang Perusahaan',
-                        'cta' => 'Call To Action',
+                        'about' => 'About',
+                        // 'cta' => 'Call To Action',
                     ])
                     ->reactive()
                     ->required(),
 
                 Forms\Components\TextInput::make('title')
-                    ->visible(fn($get) => in_array($get('type'), ['product', 'about', 'cta'])),
+                    ->visible(fn($get) => in_array($get('type'), ['product', 'about'])),
 
                 Forms\Components\TextInput::make('subtitle')
-                    ->visible(fn($get) => in_array($get('type'), ['hero', 'product'])),
+                    ->visible(fn($get) => in_array($get('type'), ['product'])),
 
                 Forms\Components\RichEditor::make('content')
                     ->columnSpanFull()
-                    ->visible(fn($get) => in_array($get('type'), ['product', 'about', 'cta'])),
+                    ->visible(fn($get) => in_array($get('type'), ['product', 'about'])),
 
                 Forms\Components\FileUpload::make('image')
                     ->image()
                     ->directory('home-sections')
-                    ->visible(fn($get) => in_array($get('type'), ['hero', 'product', 'about'])),
+                    ->visible(fn($get) => in_array($get('type'), ['product', 'about'])),
 
                 Forms\Components\TextInput::make('video_url')
                     ->label('Video URL (Embed)')
                     ->visible(fn($get) => $get('type') === 'hero'),
 
                 Forms\Components\TextInput::make('button_text')
-                    ->visible(fn($get) => in_array($get('type'), ['product', 'about', 'cta'])),
+                    ->visible(fn($get) => in_array($get('type'), ['product', 'about'])),
 
                 Forms\Components\TextInput::make('button_link')
                     ->url()
-                    ->visible(fn($get) => in_array($get('type'), ['product', 'about', 'cta'])),
+                    ->visible(fn($get) => in_array($get('type'), ['product', 'about'])),
 
                 Forms\Components\Toggle::make('is_active')
                     ->default(true),
